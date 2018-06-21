@@ -5,13 +5,17 @@ body {
 header {
     color: #0000ff;
 }
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 0.7rem;
+    }
+}
 #container {
     width: 100%;
     margin: auto;
     padding: 10px;
     text-align: center;
     color: #ffffff;
-    
 }
 article {
     margin: 50px 50px;

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background-image: url("img/darkness.png");
+}
+#container {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+}
+article {
+    margin: 50px 50px;
+    
+}
+img {
+    border-radius: 100px;
+    max-width: 150px;
+}
+hr {
+    width: 90%;
+    margin-bottom: 20px;
+}
+footer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  footer div a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+  }
+  /*animation*/
+  img{
+    position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {top:0px;}
+    to {top: 50px;}
+}
+
+@keyframes example {
+    from {top: 0px;}
+    to {top: 50px;}
+}
+  

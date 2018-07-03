@@ -42,12 +42,13 @@ footer {
     text-decoration: none;
     font-size: 18px;
     color: #ffffff;
+    transition: 1s;
   }
   footer div a:hover {
       color: #0000ff;
   }
   /*animation*/
-  img{
+  img {
     position: relative;
     -webkit-animation-name: imgAnim;  /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */    
@@ -55,6 +56,11 @@ footer {
     animation-name: imgAnim;
     animation-duration: 3s;    
     animation-fill-mode: forwards;
+    cursor: pointer;
+    transition: 1s;
+}
+img:hover {
+    transform: rotate(360deg);
 }
 
 /* Safari 4.0 - 8.0 */

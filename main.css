@@ -19,17 +19,17 @@ header {
     color: #ffffff;
 }
 article {
-    margin: 50px 50px;
+    margin: 60px 0 80px 0;
 }
 img {
     border-radius: 100px;
     max-width: 150px;
 }
 hr {
-    width: 90%;
-    margin-bottom: 20px;
+    width: 90%; 
 }
 footer {
+    height: 10%;
     width: 80%;
     margin: auto;
     display: flex;
@@ -40,9 +40,9 @@ footer {
   }
   footer div a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
-    transition: 1s;
+    transition: 0.5s;
   }
   footer div a:hover {
       color: #0000ff;
@@ -50,27 +50,29 @@ footer {
   /*animation*/
   img {
     position: relative;
-    -webkit-animation-name: imgAnim;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */    
-    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: imgAnim; 
+    -webkit-animation-duration: 2.5s;     
+    -webkit-animation-fill-mode: forwards; 
     animation-name: imgAnim;
     animation-duration: 3s;    
     animation-fill-mode: forwards;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.9s;
 }
 img:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
-/* Safari 4.0 - 8.0 */
 @-webkit-keyframes imgAmim {
-    from {top:0px;}
+    from {top:-250px;}
     to {top: 50px;}
 }
 
 @keyframes imgAnim {
-    from {top: 0px;}
+    from {top: -250px;}
     to {top: 50px;}
 }
-  
+
+

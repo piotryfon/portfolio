@@ -58,16 +58,20 @@ hr {
     width: 90%; 
 }
 footer {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
+    margin-bottom: 20px;
+  }
+  footer div{
+      margin-top: 10px;
   }
   footer div a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     transition: 0.5s;
   }

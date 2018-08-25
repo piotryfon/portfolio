@@ -21,6 +21,7 @@ button{
     width: 120px;
     height: 25px;
     background-color: #91ff00;
+    cursor: pointer;
 }
 input, button{
     margin-top: 10px;
@@ -41,4 +42,8 @@ footer a{
     text-decoration: none;
     color: #91ff00;
     font-size: 19px;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: blue;
 }

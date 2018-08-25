@@ -34,10 +34,10 @@ $(document).ready(function(){
     });
     function showInHtml(data){
         return(    
-        "<p><b>Pogoda:</b>  <img src='https://openweathermap.org/img/w/10d.png'>"  + data.weather[0].main + "</p><br/>" +
+        "<p><b>Pogoda:</b>  <img src='https://openweathermap.org/img/w/" + data.weather[0].icon +".png'>"  + data.weather[0].main + "</p><br/>" +
         "<p><b>Zachmurzenie:</b> " + data.weather[0].description + "</p><br/>" +  
         "<p><b>Temp:</b> "+ data.main.temp + " &#186</p><br/>" +
-        "<p><b>Ciśnienie:</b> " + data.main.pressure + "</p><br/>" +
+        "<p><b>Ciśnienie:</b> " + data.main.pressure + " hPa</p><br/>" +
         "<p><b>Wiatr:</b> " + data.wind.speed + " m/s</p><br/>" 
         )
     }

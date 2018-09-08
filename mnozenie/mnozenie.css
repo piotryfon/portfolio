@@ -1,12 +1,15 @@
 body{
     margin: 0;
-    background: url(./img/paper-1.jpg);
+    background-color: #fff;
 }
 a{
     text-decoration: none;
 }
+header{
+    text-align: center;
+}
 #back-to-portfolio{
-    width: 110px;
+    width: 140px;
     font-size: 18px;
     border: 1px solid white;
     padding: 10px;
@@ -18,36 +21,34 @@ a{
 #back-to-portfolio:hover{
     background-color: #e07715;
 }
-header{
-    color: #adff2f;
-}
 #app-container{
     width: 90%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
 }
 .flex-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
 #showTask{
     padding-top: 8px;
     text-align: center;
     box-sizing: border-box;
-    width: 145px;
+    width: 120px;
     height: 46px;
     background-color: #006eff;
     color: #ffffff;
-    font-size: 26px; 
-    margin: 10px;
+    font-size: 24px; 
+    margin: 5px;
     border-radius: 5px; 
 }
 #input{
     height: 40px;
-    width: 140px;
-    font-size: 26px;
-    margin: 10px;
+    width: 80px;
+    font-size: 24px;
+    margin: 5px;
     padding-left: 5px;
     border-radius: 5px;
 }
@@ -57,7 +58,7 @@ header{
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    margin: 10px; 
+    margin: 5px; 
     color: #ffffff;
 }
 .btn:focus{
@@ -67,7 +68,6 @@ header{
     opacity: 0.5;
 }
 #show-result-div{
-    text-align: left;
-    color: #adff2f;
+    text-align: center;
     margin: 10px;
 }

@@ -8,15 +8,15 @@ checkBtn.addEventListener("click", submitVal);
 let parsedValue;
 let result;
 
-function getRandomNumberInRange(min, max){
+function getRandomNumberInRange(min, max) {
     return Math.round(Math.random() * (max - min)) + min;
 }
 
-function randomizeTask(){
+function randomizeTask() {
 
     let a = getRandomNumberInRange(1, 10);
     let b = getRandomNumberInRange(1, 10);
-    
+
     result = a * b;
     console.log("Wynik to: " + result)
     showTask.innerHTML = `${a} x ${b} =`
@@ -25,31 +25,27 @@ function randomizeTask(){
     showResultDiv.innerHTML = "<h3>Dasz radę!</h3>";
 }
 
-function submitVal(){
+function submitVal() {
 
-    if(input.value){
+    if (input.value) {
         parsedValue = parseInt(input.value);
         console.log("Napisałeś: " + parsedValue);
-        checkResult(); 
-    }else{
-        showResultDiv.innerHTML = "<h3>Wpisz wartość i potwierdź przyciskiem obok!</h3>"
-    }   
+        checkResult();
+    } else {
+        showResultDiv.innerHTML = `<h3>Naciśnij "Losuj zadanie" i wpisz wynik!</h3>`
+    }
 }
 
-function checkResult(){
+function checkResult() {
 
-    if(result && parsedValue){
-        
-        console.log("result: " + result + " value: " + parsedValue)
-        console.log(result === parsedValue)
-        if(result === parsedValue){
-            showResultDiv.innerHTML = "<h3>Bardzo dobrze!</h3>"
-        }else {
-            showResultDiv.innerHTML = `<h3>Źle, wynik to: ${result}</h3>`
-        }
+    console.log("result: " + result + " value: " + parsedValue)
+    console.log(result === parsedValue)
+    if (result === parsedValue) {
+        showResultDiv.innerHTML = "<h3>Bardzo dobrze!</h3>"
+    } else {
+        showResultDiv.innerHTML = `<h3>Źle, wynik to: ${result}</h3>`
+    }
 
-    }else showResultDiv.innerHTML = `<h3>Naciśnij "Start" i wpisz prawidłowo wartość!</h3>`
-
-    start.addEventListener("click", randomizeTask); 
+    start.addEventListener("click", randomizeTask);
     checkBtn.removeEventListener("click", submitVal);
 }

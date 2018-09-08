@@ -7,14 +7,18 @@ body {
 header {
     color: #0000ff;
 }
+.navbar{
+    font-size: 17px;
+    padding: 5px;
+}
+.dropdown-menu li a{
+    font-size: 17px;
+}
 #container {
     width: 92%;
     margin: auto;
     text-align: center;
     color: #ffffff;
-}
-.opacity{
-    opacity: 0.7;
 }
 article {
     margin: 60px 0 60px 0;

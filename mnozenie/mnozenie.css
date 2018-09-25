@@ -11,15 +11,15 @@ header{
 #back-to-portfolio{
     width: 140px;
     font-size: 18px;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     padding: 10px;
     background-color: #ff932f;
-    color: white;
+    color: #ffffff;
     text-align: center;
     cursor: pointer;
 }
 #back-to-portfolio:hover{
-    background-color: #e07715;
+    background-color: #fa8415;
 }
 #app-container{
     width: 90%;

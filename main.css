@@ -7,7 +7,7 @@ body {
 header {
     color: #0000ff;
 }
-.navbar{
+.navbar {
     font-size: 17px;
     padding: 5px;
 }
@@ -39,46 +39,52 @@ hr {
 }
 .flex-container {
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
     flex-direction: row;
 }
 footer {
-    width: 85%;
+    width: 90%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
     margin-bottom: 20px;
   }
-  footer div{
+  footer div {
       margin-top: 10px;
   }
   footer div a {
-    text-decoration: none;
     font-size: 14px;
     color: #ffffff;
     transition: 0.5s;
   }
   footer div a:hover {
-      color: #0000ff;
+    text-decoration: none;
+    color: #0000ff;
   }
   @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
+      -ms-transform: translate3d(-1px, 0, 0);
+      -webkit-transform: translate3d(-1px, 0, 0);
     }
     
     20%, 80% {
       transform: translate3d(2px, 0, 0);
+      -ms-transform: translate3d(2px, 0, 0);
+      -webkit-transform: translate3d(2px, 0, 0);
     }
   
     30%, 50%, 70% {
       transform: translate3d(-4px, 0, 0);
+      -ms-transform: translate3d(-4px, 0, 0);
+      -webkit-transform: translate3d(-4px, 0, 0);
     }
   
     40%, 60% {
       transform: translate3d(4px, 0, 0);
+      -ms-transform: translate3d(4px, 0, 0);
+      -webkit-transform: translate3d(4px, 0, 0);
     }
   }
 

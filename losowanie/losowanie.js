@@ -1,15 +1,15 @@
 (function(){
-
-    let btn = document.querySelector("#getNumbers"),
-        output = document.querySelector("#showNumbers");
+    $(document).ready(function(){
+        let btn = $("#getNumbers"),
+        output = $("#showNumbers");
 
     function getRandom(min, max){
         return Math.round(Math.random() * (max - min) + min)
     }
 
     function sortNumbers(a,b){
-        if(a<b) return -1
-        else if(a>b) return 1
+        if(a < b) return -1
+        else if(a > b) return 1
         else return 0
     }
 
@@ -28,8 +28,8 @@
             numbers.push(rand);  
         }
         let sortedNumbers = numbers.sort(sortNumbers)
-        output.value = sortedNumbers.join(", ")
+        output.html(sortedNumbers.join(", "));
     }
-    btn.onclick = showNumbers;
-
+    btn.on("click", showNumbers);
+    });
 })();

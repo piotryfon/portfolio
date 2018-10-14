@@ -12,6 +12,9 @@ body{
 input{
     font-size: 20px;
 }
+#policz{
+    margin-top: 5px;
+}
 #comeBack{
     box-sizing: border-box;
     width: 120px;

@@ -26,21 +26,21 @@ $(document).ready(function() {
             let roundResult = Math.decimal(result, 2);
             console.log("BMI: " + roundResult)
             if(roundResult < 16) {
-                $("output").html("<h3> Wygłodzenie </h3>");
+                $("output").html("<h3> Wygłodzenie. </h3>");
             } else if (roundResult >= 16 && roundResult < 17) {
-                $("output").html("<h3> Wychudzenie </h3>");
+                $("output").html("<h3> Wychudzenie. </h3>");
             } else if (roundResult >= 17 && roundResult < 18.5) {
-                $("output").html("<h3> Niedowaga </h3>");
+                $("output").html("<h3> Niedowaga. </h3>");
             } else if(roundResult >=18.5 && roundResult < 25) {
-                $("output").html("<h3> Wartość prawidłowa. </h3>");
+                $("output").html("<h3> Wartość bmi prawidłowa. </h3>");
             } else if(roundResult >= 25 && roundResult < 30) {
-                $("output").html("<h3> Nadwaga </h3>");
+                $("output").html("<h3> Nadwaga. </h3>");
             } else if(roundResult >= 30 && roundResult < 35) {
-                $("output").html("<h3> I stopień otyłości </h3>");
+                $("output").html("<h3> I stopień otyłości. </h3>");
             } else if(roundResult >= 35 && roundResult < 40) {
-                $("output").html("<h3> II stopień otyłości (otyłość kliniczna)</h3>");
-            } else $("output").html("<h3> III stopień otyłości (otyłość skrajna)</h3>");
-        } else $("output").html("<h3> Wpisz wartości w pola </h3>");
+                $("output").html("<h3> II stopień otyłości (otyłość kliniczna).</h3>");
+            } else $("output").html("<h3> III stopień otyłości (otyłość skrajna).</h3>");
+        } else $("output").html("<h3> Uzupełnij wartości w polach powyżej. </h3>");
     })
     
 })

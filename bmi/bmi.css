@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #282828;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+input{
+    font-size: 20px;
+}
+#comeBack{
+    box-sizing: border-box;
+    width: 120px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid #fff;
+    margin: auto;
+    padding: 14px 2px;
+    margin-top: 20px;
+}
+#comeBack:hover{
+    background-color: orange;
+    color: #383838;
+}
+a{
+    text-decoration: none;
+}

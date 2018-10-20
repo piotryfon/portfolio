@@ -16,19 +16,19 @@
 
         <header>
             <a href="https://piotryfon.github.io/portfolio">
-                <div id="back-to-portfolio">Portfolio</div>
+                <div id="back-to-portfolio">do portfolio</div>
             </a>
-            <hr>
-            <h2 >Rozwiąż zadania:</h2>
-            <button class="btn" id="start">Losuj zadanie</button>
+            <div id="start-div">
+                <h2 >Rozwiąż zadania:</h2>
+                <button class="btn" id="start">Losuj zadanie</button>
+            </div>
         </header>
-    
-        <hr/>
         <div id="show-result-div"></div>
+        <div id="points"></div>
         <div class="flex-container">
             <div id="showTask"></div>
             
-            <input id="input" type="number">
+            <input id="input" type="number"  oninput="maxLengthCheck(this)" maxlength = "2">
          
             <button class="btn" id="check-btn">Sprawdź wynik</button>
         </div>

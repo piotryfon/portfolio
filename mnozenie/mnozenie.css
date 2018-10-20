@@ -16,10 +16,11 @@ header{
     border: 1px solid #ffffff;
     padding: 10px;
     background-color: #ff4500;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     cursor: pointer;
     margin: auto;
+    transition: 0.4s;
 }
 #back-to-portfolio:hover{
     background-color: #ffa500;
@@ -49,7 +50,7 @@ header{
     width: 120px;
     height: 46px;
     background-color: #006eff;
-    color: #ffffff;
+    color: #fff;
     font-size: 24px; 
     margin: 5px;
     border-radius: 5px; 
@@ -59,7 +60,7 @@ header{
     width: 80px;
     font-size: 24px;
     margin: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
     border-radius: 5px;
 }
 .btn{
@@ -69,13 +70,10 @@ header{
     cursor: pointer;
     transition: 0.3s;
     margin: 5px; 
-    color: #ffffff;
+    color: #fff;
 }
 .btn:focus{
-    background-color: #006eff;
-    color: #ffffff;
-    box-shadow: 0 0;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 #show-result-div{
     text-align: center;

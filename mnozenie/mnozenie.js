@@ -3,7 +3,7 @@ function maxLengthCheck(object)
     if (object.value.length > object.maxLength)
       object.value = object.value.slice(0, object.maxLength)
   }
-  
+
 $(document).ready(function(){
 
     let input = $("#input");
@@ -17,20 +17,20 @@ $(document).ready(function(){
     let result;
     let counter = 0;
     let points = 0;
-    let zacheta = "";
+    let incentive = "";
     let resetPoints;
 
-    function losujHtml(){
-        let losHtml = Math.floor(Math.random()*3);
+    function losujHtml() {
+        let losHtml = Math.floor(Math.random() * 3);
        switch(losHtml){
            case 0:
-           zacheta = "Dasz radę!";
+         incentive = "Dasz radę!";
            break;
            case 1:
-           zacheta = "Poradzisz sobie!";
+         incentive = "Poradzisz sobie!";
            break;
            case 2:
-           zacheta = ":-)";
+         incentive = ":-)";
            break;
        }
     }
@@ -40,7 +40,9 @@ $(document).ready(function(){
     }
     
     function randomizeTask() {
+
         losujHtml();
+
         if(resetPoints){
             score.html("<h4>Zaczynamy od nowa.</h4>");
         }
@@ -53,7 +55,7 @@ $(document).ready(function(){
         showTask.html( a + " X " + b + " = ");
         start.off("click", randomizeTask);
         checkBtn.on("click", submitVal);
-        showResultDiv.html("<h3>" + zacheta + "</h3>");
+        showResultDiv.html("<h3>" + incentive + "</h3>");
     }
     
     function submitVal() {
@@ -65,6 +67,7 @@ $(document).ready(function(){
             showResultDiv.html('<h3>Naciśnij "Losuj zadanie" i wpisz wynik!</h3>');
         }
     }
+
     function checkResult() {
 
         counter += 1;
@@ -78,7 +81,7 @@ $(document).ready(function(){
         }
 
         if (counter === 10 && counter/points <= 1.25){
-            score.html("<h4>Gratulacje! Dobrze ci poszło. Zdobyte punkty: " + points + " na " + counter + " zad.<h4>");
+            score.html("<h4>Gratulacje! Dobrze Ci poszło. Zdobyte punkty: " + points + " na " + counter + " zad.<h4>");
             counter = 0;
             points = 0;
             resetPoints = true;
@@ -89,11 +92,11 @@ $(document).ready(function(){
             counter = 0;
             points = 0;
             resetPoints = true;
-
         }else {
             score.html("<h4>" + "Zdobyte punkty: " + points + " na " + counter + " zad.</h4>");
             resetPoints = false;
         }
+        
         start.on("click", randomizeTask);
         checkBtn.off("click", submitVal);
     }

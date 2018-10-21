@@ -4,7 +4,7 @@ function maxLengthCheck(object)
       object.value = object.value.slice(0, object.maxLength)
   }
 
-$(document).ready(function(){
+$(document).ready(function() {
 
     let input = $("#input");
     let showTask = $("#showTask");
@@ -38,10 +38,15 @@ $(document).ready(function(){
     function getRandomNumberInRange(min, max) {
         return Math.round(Math.random() * (max - min)) + min;
     }
-    
+
+    function resetInput() {
+        $("#input").val('');
+    }
+
     function randomizeTask() {
 
         losujHtml();
+        resetInput();
 
         if(resetPoints){
             score.html("<h4>Zaczynamy od nowa.</h4>");

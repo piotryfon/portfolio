@@ -69,7 +69,7 @@ $(document).ready(function() {
             parsedValue = parseInt(input.val());
             checkResult();
         } else {
-            showResultDiv.html('<h3>Naciśnij "Losuj zadanie" i wpisz wynik!</h3>');
+            showResultDiv.html('<h3>Wpisz wynik!</h3>');
         }
     }
 

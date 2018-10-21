@@ -7,25 +7,6 @@ body{
 a{
     text-decoration: none;
 }
-header{
-    text-align: center;
-    margin-top: 20px;
-}
-#back-to-portfolio{
-    width: 140px;
-    font-size: 18px;
-    border: 1px solid #ffffff;
-    padding: 10px;
-    background-color: #ff4500;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-    margin: auto;
-    transition: 0.4s;
-}
-#back-to-portfolio:hover{
-    background-color: #ffa500;
-}
 #app-container{
     width: 90%;
     margin: auto;
@@ -41,11 +22,11 @@ header{
     flex-wrap: wrap;
 }
 #start-div{
-    border-top: 1px solid #adff2f; 
-    margin-top: 25px;
+    text-align: center;
+    margin-top: 30px;
 }
 #showTask{
-    padding-top: 8px;
+    padding-top: 5px;
     text-align: center;
     box-sizing: border-box;
     width: 120px;
@@ -54,13 +35,14 @@ header{
     color: #fff;
     font-size: 24px; 
     margin: 5px;
+    border: 1px solid #fff;
     border-radius: 5px; 
 }
 #input{
     height: 40px;
     width: 80px;
     font-size: 24px;
-    margin: 5px;
+    margin: 8px 4px;
     padding-left: 10px;
     border-radius: 5px;
 }
@@ -72,11 +54,13 @@ header{
     transition: 0.3s;
     margin: 5px; 
     color: #fff;
+    border: 1px solid #fff;
 }
 .btn:focus{
     opacity: 0.3;
 }
 #show-result-div{
+    padding-top: 20px;
     text-align: center;
     margin: 20px 0px;
     border-top: 1px solid #adff2f;

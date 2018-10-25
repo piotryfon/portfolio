@@ -1,29 +1,29 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    background: url("./img/background-01.png") repeat;
+    background-color: #383838;
     background-size: cover; 
 }
-.container{
+.container {
     justify-content: center;
     margin-top: 30px;
     text-align: center;
     color: whitesmoke;
     padding: 5px;
 }
-.container p{
+.container p {
     font-size: 1.2rem;
 }
-button{
+#getWeather {
     width: 150px;
     background-color: #91ff00;
     cursor: pointer;
 }
-input, button{
+input, #getWeather {
     margin-top: 10px;
     font-size: 16px;
 }
-#info{
+#info {
     margin: 15px;
     font-size: 18px;
     color: #ffa500;

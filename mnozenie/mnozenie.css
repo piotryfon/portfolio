@@ -69,7 +69,7 @@ a {
     text-align: center;
     margin-top: 5px;
 }
-#points {
+#score {
     text-align: center;
 }
 .good {
@@ -79,3 +79,13 @@ a {
     color: #ff0000;
 }
 
+#progressImg img {
+    max-width: 600px;
+    min-width: 220px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid grey;
+    border-radius: 5px;
+}

@@ -109,12 +109,12 @@ $(document).ready(function () {
             showResultDiv.html('<h4 class="not-good">Źle, wynik to: ' + result + '</h4>');
         }
 
-        if (counter === 10 && counter / points <= 1.25) {
-            score.html('<h4 class="good">Gratulacje! Dobrze Ci poszło. Zdobyte punkty: ' + points + ' na 10  zad.<h4>');
+        if (counter === 10 && counter / points === 1) {
+            score.html('<h4 class="good">Gratulacje! Wylądowałeś na księżycu! Zdobyte punkty: ' + points + ' na 10  zad.<h4>');
             counter = 0;
             points = 0;
             resetPoints = true;
-        } else if (counter === 10 && counter / points > 1.25) {
+        } else if (counter === 10 && counter / points > 1) {
             score.html('<h4 class="not-good">Spróbuj jeszcze raz! Zdobyte punkty: ' + points + ' na  10 zad.<h4>');
             counter = 0;
             points = 0;
@@ -125,25 +125,25 @@ $(document).ready(function () {
         }
 
         if (imgPoints === 1) {
-            $('#progressImg').html('<img src="./img/r1.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_1.png"/>');
         } else if (imgPoints === 2) {
-            $('#progressImg').html('<img src="./img/r2.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_2.png"/>');
         } else if (imgPoints === 3) {
-            $('#progressImg').html('<img src="./img/r3.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_3.png"/>');
         } else if (imgPoints === 4) {
-            $('#progressImg').html('<img src="./img/r4.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_4.png"/>');
         } else if (imgPoints === 5) {
-            $('#progressImg').html('<img src="./img/r5.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_5.png"/>');
         } else if (imgPoints === 6) {
-            $('#progressImg').html('<img src="./img/r6.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_6.png"/>');
         } else if (imgPoints === 7) {
-            $('#progressImg').html('<img src="./img/r7.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_7.png"/>');
         } else if (imgPoints === 8) {
-            $('#progressImg').html('<img src="./img/r8.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_8.png"/>');
         } else if (imgPoints === 9) {
-            $('#progressImg').html('<img src="./img/r9.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_9.png"/>');
         } else if (imgPoints === 10) {
-            $('#progressImg').html('<img src="./img/r10.png"/>');
+            $('#progressImg').html('<img src="./img/rakieta_10.png"/>');
         } else $('#progressImg').html('');
 
         start.on("click", randomizeTask);

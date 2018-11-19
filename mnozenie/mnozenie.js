@@ -10,7 +10,6 @@ $(document).ready(function () {
     let showResultDiv = $("#show-result-div");
     let start = $("#start");
     start.on("click", randomizeTask);
-    input.on('keypress', submitValueByEnter);
     let checkBtn = $("#check-btn");
     let score = $("#score");
     let taskCounter = $("#task-counter");
@@ -51,7 +50,6 @@ $(document).ready(function () {
 
     function randomizeTask() {
 
-        input.on("keypress", submitValueByEnter);
         showNumberOfTask();
         drawIncentive();
         resetInput();
@@ -73,17 +71,6 @@ $(document).ready(function () {
         start.off("click", randomizeTask);
         checkBtn.on("click", submitVal);
         showResultDiv.html("<h4>" + incentive + "</h4>");
-    }
-
-    function submitValueByEnter(event) {
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-      
-        if (event.which == 13 || event.keyCode == 13) {
-            console.log("ENTER");
-            submitVal();
-            input.off("keypress", submitValueByEnter);
-        }
     }
   
     function submitVal() {

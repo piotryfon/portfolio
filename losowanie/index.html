@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Losowanie Dużego Lotka</title>
     <meta name="description" content="Wylosuj szczęśliwe cyfry" />
-    <meta name="keyword" content="losowanie liczb lotto"/>
+    <meta name="keyword" content="losowanie liczb lotto" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="losowanie.css" />
-    
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
 </head>
 <body>
-    <div class="container">
-        <a href="https://piotryfon.github.io/portfolio">
-            <div id="back">portfolio</div>
-        </a>
-        <h1>Losowanie Dużego Lotka</h1>
+    <nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="https://piotryfon.github.io/portfolio">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu"
+            aria-expanded="false" aria-label="Przełącznik nawigacji">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                        aria-haspopup="true" id="submenu"> Projekty </a>
+                    <div class="dropdown-menu" aria-labelledby="submenu">
+                        <a class="dropdown-item" href="./bmi/index.html"> Indeks bmi </a>
+                        <a class="dropdown-item" href="./mnozenie/index.html"> Nauka mnożenia </a>
+                        <a class="dropdown-item" href="https://pit-weather-app.herokuapp.com" target="_blank">
+                            WeatherApp - React </a>
+                        <a class="dropdown-item" href="./weather-app/index.html"> WeatherApp - jQuery </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/piotr-tryfon-54729a152" target="_blank">
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/piotryfon" target="_blank"> GitHub </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:pit.pit@wp.pl" target="_blank"> pit.pit@wp.pl </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="background-photo">
+            <h1>Losowanie Dużego Lotka</h1>
+            <h2>Wylosuj szczęśliwe numery i zmień swoje życie!</h2>
+        </div>
         <div class="flex-container">
             <output id="showNumbers" class="output"></output>
-            <button id="getNumbers" class="btn">Losuj</button>  
-        </div>   
+            <button id="getNumbers" class="btn">Losuj</button>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="losowanie.js"></script>
 </body>
+
 </html>
